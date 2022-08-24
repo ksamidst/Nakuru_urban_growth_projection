@@ -40,7 +40,7 @@ there is the script file 'code.py' containing the python code. The other files, 
 
 _______________2.) LOADING THE DATA ONTO QGIS PLATFORM________________<br/>
 Once you have downloaded the data, you can visualize th data using the [QGIS software](https://www.qgis.org/en/site/forusers/download.html). Ensure you
-havr the software installed for your platform; Windows/ Linux/ MacOS/ BSD. The data you have downloaded includes a collection of files including GeoTIFF
+have the software installed for your platform; Windows/ Linux/ MacOS/ BSD. The data you have downloaded includes a collection of files including GeoTIFF
 image files. Once you have QGIS up and running on your machine, you can load and visualize the GeoTIFF files using the 'Layer' menu as shown in the image below.<br/>
 ![image](https://user-images.githubusercontent.com/75077556/186357634-1bbe1f30-ccf5-47c0-af9a-3f14ecdab642.png)<br/>
 In the 'Data Source Manager' dialog box that pops up, use the three dots button shown on the right to navigate to the location of the GeoTIFF files you have downloaded
