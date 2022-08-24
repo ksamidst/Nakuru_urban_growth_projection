@@ -7,9 +7,8 @@ ______________RUNNING THE SCRIPT______________<br/>
 
 This process will consist of four steps as follows:<br/>
 1.) Downloading the files<br/>
-3.) Loading the data onto QGIS platform
-4.) Modifications to the script<br/>
-5.) Visualizing the product<br/>
+2.) Loading the data onto QGIS platform
+3.) Loading and running the python script on QGIS<br/>
 
 _______________1.) DOWNLOADING THE FILES____________________<br/>
 ![image](https://user-images.githubusercontent.com/75077556/186348151-fcfe52d3-bc00-47e6-ad67-59fecc4df433.png)<br/>
@@ -61,7 +60,11 @@ For this case; the Nakuru municipality classified image, the images have seven d
 - Pixel value 6: Bareland areas.
 - Pixel value 7: Rocky areas.
 
-_______________3.) LOADING THE PYTHON SCRIPT ONTO QGIS________________<br/>
+_______________3.) LOADING AND RUNNING THE PYTHON SCRIPT ON QGIS________________<br/>
 The algorithm that generates the projected urbanization product is implemented as a python script. You need to run this python script in a python environment to generate the product. The QGIS platform offers a python environment for executing programs especially for remote sensing functions. To load and run the python script on QGIS, on the 'Plugins' menu, click on python console as shown on the image below.<br/>
 ![image](https://user-images.githubusercontent.com/75077556/186376398-8da9a0a0-4ef2-4a2c-bd29-888fd3d6f7a5.png)<br/>
-The python console window will appear as shown in the image below. To open the python editor, click on the 'show editor' icon as highlighted in the image. You need to load the script 'code.py' onto this editor.
+The python console window will appear as shown in the image below. To open the python editor, click on the 'show editor' icon as highlighted in the image. You need to load the script 'code.py' onto this editor. To do this, click on the 'Open script...' icon on the top of the editor and navigate to the location of 'code.py'.<br/>
+![image](https://user-images.githubusercontent.com/75077556/186386833-9bd70649-0d56-42a9-b964-27016c962632.png)<br/>
+Python script is displayed on the editor. Before you can run the script to view the output, you need to make one modification to it. Locate the line of code that specifies the location of the files you are working with.<br/>
+![image](https://user-images.githubusercontent.com/75077556/186390235-09227cdd-3a22-49e4-a0f9-2b5aa08b28c2.png)<br/>
+Change this value to the location of the files on your computer. Once you run the script, it will generate the result image in the same location of the files you are working with, with the file name 'NEW_predictedlandcover_ra_30m_2030N.tif' as indicated in the script. Load this image as a layer on QGIS to visualize it.
